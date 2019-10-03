@@ -43,6 +43,50 @@
   margin: 10px;
 }
 
+.theremin-waveform-button {
+  position: absolute;
+  width: 20vw;
+  height: 7vh;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  font-size: 4vh;
+}
+
+.theremin-surface {
+  position: absolute;
+  width: 47vw;
+  height: 28vh;
+  top: 0vh;
+  left: 21vw;
+  background-image: linear-gradient(to right, black, red);
+  border: 3px solid yellow;
+}
+
+.theremin-surface p {
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  text-align: right;
+  font-size: 1em;
+  margin: .1em, 1em, 0em, 0em;
+}
+
+#theremin-sine-button {
+  left: 0vw;
+  top: 0vh;
+}
+#theremin-triangle-button {
+  left: 0vw;
+  top: 7vh;
+}
+#theremin-sawtooth-button {
+  left: 0px;
+  top: 14vh;
+}
+#theremin-square-button {
+  left: 0px;
+  top: 21vh;
+}
+
 .rhythm-container {
   position: absolute;
   width: 70vw;
