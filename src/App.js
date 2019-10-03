@@ -12,11 +12,11 @@ function App() {
         <h2>Bebop and Rock Steady present...</h2>
         <h1>Krang, a react band in a page</h1>
       </header>
-      <body>
+      <main>
         <Controls />
         <Theremin />
         <Rhythm />
-      </body>
+      </main>
     </div>
   );
 }
