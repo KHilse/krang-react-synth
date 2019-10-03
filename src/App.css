@@ -21,15 +21,22 @@
   color: #09d3ac;
 }
 
+body {
+  background-color: #3a18a3;
+  color: #0FB051;
+}
+
 .controls-container {
   position: absolute;
   width: 20vw;
   height: 90vh;
   left: 0px;
   top: 0px;
-  background-color: darkgray;
+  background-color: #0FB051;
   border: 3px solid black;
   margin: 10px;
+  border-radius: 4px;
+  color: #3A18A3;
 }
 
 .theremin-container {
@@ -38,9 +45,10 @@
   height: 30vh;
   left: 22vw;
   top: 26vh;
-  background-color: darkgray;
+  background-color: #0FB051;
   border: 3px solid black;
   margin: 10px;
+  border-radius: 4px;
 }
 
 .theremin-waveform-button {
@@ -96,7 +104,8 @@
   height: calc(80vh - 60px);
   left: 22vw;
   top: 58vh;
-  background-color: darkgray;
+  background-color: #DCA304;
   border: 3px solid black;
   margin: 10px;
+  border-radius: 4px;
 }
