@@ -93,7 +93,7 @@
 .rhythm-container {
   position: absolute;
   width: 70vw;
-  height: 30vh;
+  height: calc(80vh - 60px);
   left: 22vw;
   top: 58vh;
   background-color: darkgray;
