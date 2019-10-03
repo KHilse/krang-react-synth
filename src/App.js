@@ -1,11 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 import Controls from './components/controls';
 import Theremin from './components/theremin';
 import Rhythm from './components/rhythm';
+import Tone from "tone";
+
 
 function App() {
+
+  const [toneContext, setToneContext] = useState(Tone.context);
+
   return (
     <div className="App">
       <header>
@@ -14,8 +18,8 @@ function App() {
       </header>
       <main>
         <Controls />
-        <Theremin />
-        <Rhythm />
+        <Rhythm toneContext={toneContext} />
+        <Theremin toneContext={toneContext} />
       </main>
     </div>
   );

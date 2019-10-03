@@ -3,6 +3,7 @@ import Tone from "tone";
 
 const PlayerProvider = ({ children }) => {
   const [player, setPlayer] = useState(null);
+  const [channel] = useState(new Tone.Channel());
   useEffect(() => {
     const player = new Tone.Players(
       {
@@ -15,9 +16,9 @@ const PlayerProvider = ({ children }) => {
         console.log("buffers loaded");
         setPlayer(player);
       }
-    ).toMaster();
+    )
+    player.chain(channel, Tone.Master);
   }, []);
-
   return children({ player });
 };
 
