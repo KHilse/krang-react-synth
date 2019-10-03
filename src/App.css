@@ -35,9 +35,9 @@
 .theremin-container {
   position: absolute;
   width: 70vw;
-  height: 20vh;
+  height: 30vh;
   left: 22vw;
-  top: 46vh;
+  top: 26vh;
   background-color: darkgray;
   border: 3px solid black;
   margin: 10px;
@@ -46,9 +46,9 @@
 .rhythm-container {
   position: absolute;
   width: 70vw;
-  height: 20vh;
+  height: 30vh;
   left: 22vw;
-  top: 68vh;
+  top: 58vh;
   background-color: darkgray;
   border: 3px solid black;
   margin: 10px;
