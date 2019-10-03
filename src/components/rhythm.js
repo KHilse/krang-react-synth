@@ -6,6 +6,7 @@ import PlayerProvider from './drum machine/player-provider'
 
 const Rhythm = props => {
     return (
+      <div className="rhythm-container">
         <PlayerProvider>
       {({ player }) => {
         if (!player) {
@@ -14,6 +15,7 @@ const Rhythm = props => {
         return <Sequencer player={player} />;
       }}
     </PlayerProvider>
+    </div>
     )
 }
 
