@@ -20,3 +20,36 @@
 .App-link {
   color: #09d3ac;
 }
+
+.controls-container {
+  position: absolute;
+  width: 20vw;
+  height: 90vh;
+  left: 0px;
+  top: 0px;
+  background-color: darkgray;
+  border: 3px solid black;
+  margin: 10px;
+}
+
+.theremin-container {
+  position: absolute;
+  width: 70vw;
+  height: 20vh;
+  left: 22vw;
+  top: 46vh;
+  background-color: darkgray;
+  border: 3px solid black;
+  margin: 10px;
+}
+
+.rhythm-container {
+  position: absolute;
+  width: 70vw;
+  height: 20vh;
+  left: 22vw;
+  top: 68vh;
+  background-color: darkgray;
+  border: 3px solid black;
+  margin: 10px;
+}
