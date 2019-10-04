@@ -24,7 +24,7 @@ const Theremin = props => {
         });
         console.log(oscillator)
         oscillator.mute = false;
-        oscillator.volume.value = -volFreq.volume / 200;
+        oscillator.volume.value = -5 - ((200 - volFreq.volume) / 3);
         oscillator.frequency.value = freq;
     }
 

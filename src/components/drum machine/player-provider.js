@@ -21,6 +21,7 @@ const PlayerProvider = ({ children }) => {
         setPlayer(player);
       }
     )
+    channel.volume.value = -5;
     player.chain(channel, Tone.Master);
   }, []);
   return children({ player });
