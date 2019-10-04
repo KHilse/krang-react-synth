@@ -24,6 +24,7 @@
 body {
   background-color: #3a18a3;
   color: #0FB051;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .controls-container {
@@ -37,7 +38,7 @@ body {
   margin: 10px;
   border-radius: 4px;
   color: #3A18A3;
-  box-shadow: #282c34 5px;
+  box-shadow: #282c34 10px 10px;
 }
 
 .theremin-container {
@@ -45,12 +46,12 @@ body {
   width: 70vw;
   height: 30vh;
   left: 22vw;
-  top: 26vh;
+  top: 0vh;
   background-color: #0FB051;
   border: 3px solid black;
   margin: 10px;
   border-radius: 4px;
-  box-shadow: #282c34 5px;
+  box-shadow: #282c34 10px 15px;
 }
 
 .theremin-waveform-button {
@@ -110,10 +111,11 @@ body {
   width: 70vw;
   height: calc(80vh - 60px);
   left: 22vw;
-  top: 58vh;
+  top: 33vh;
   background-color: #DCA304;
   border: 3px solid black;
-  margin: 10px;
+  margin-top: 30px;
+  margin-left: 15px;
   border-radius: 4px;
-  box-shadow: #282c34 5px;
+  box-shadow: #282c34 20px 15px;
 }
