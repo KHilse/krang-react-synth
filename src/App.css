@@ -37,6 +37,7 @@ body {
   margin: 10px;
   border-radius: 4px;
   color: #3A18A3;
+  box-shadow: #282c34 5px;
 }
 
 .theremin-container {
@@ -49,6 +50,7 @@ body {
   border: 3px solid black;
   margin: 10px;
   border-radius: 4px;
+  box-shadow: #282c34 5px;
 }
 
 .theremin-waveform-button {
@@ -113,4 +115,5 @@ body {
   border: 3px solid black;
   margin: 10px;
   border-radius: 4px;
+  box-shadow: #282c34 5px;
 }
