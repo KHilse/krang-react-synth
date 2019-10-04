@@ -70,7 +70,8 @@ const Theremin = props => {
             <button className="theremin-waveform-button" name="tri" id="theremin-triangle-button" onClick={() => setWaveform('triangle')}>TRI</button><br />
             <button className="theremin-waveform-button" name="saw" id="theremin-sawtooth-button" onClick={() => setWaveform('sawtooth')}>SAW</button><br />
             <button className="theremin-waveform-button" name="squ" id="theremin-square-button" onClick={() => setWaveform('square')}>SQU</button>
-            <input type="range" id="theremin-delay-time-range" name="theremin-delay-time-range" min="0" max="5"/>
+            <input type="range" id="theremin-delay-time-range" name="theremin-delay-time-range" min="0" max="5" step="0.1" />
+            <input type="range" id="theremin-delay-regen-range" name="theremin-delay-regen-range" min="0" max="1" step="0.01" />
             <div className="theremin-surface" onPointerMove={setVF} onMouseOut={mute} onLoad={initTheremin} onClick={initTheremin}>
                 <p>{waveform}</p>
                 <p>{volFreq.volume}</p>

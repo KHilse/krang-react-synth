@@ -53,6 +53,9 @@ body {
   box-shadow: #282c34 5px;
 }
 
+.theremin-container[input][type=range] {
+}
+
 .theremin-waveform-button {
   position: absolute;
   width: 10vw;
@@ -101,8 +104,23 @@ body {
 }
 
 #theremin-delay-time-range {
+  position: absolute;
+  writing-mode: bt-lr; /* IE */
+  -webkit-appearance: slider-vertical; /* WebKit */
   left: 10vw;
   top: 4vh;
+  width: 4vw;
+  height: 24vh;
+}
+
+#theremin-delay-regen-range {
+  position: absolute;
+  writing-mode: bt-lr; /* IE */
+  -webkit-appearance: slider-vertical; /* WebKit */
+  left: 16vw;
+  top: 4vh;
+  width: 4vw;
+  height: 24vh;
 }
 
 .rhythm-container {
