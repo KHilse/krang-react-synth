@@ -47,12 +47,16 @@ const Theremin = props => {
             'attack': 0.3,
             'release': 0.1
           });
+        let thereminDelay = new Tone.PingPongDelay({
+            'delayTime': .25,
+            'feedback': .7
+        })
         let thereminReverb = new Tone.Reverb({
-            'decay': 2,
+            'decay': 1.5,
             'preDelay': 0.01
         });
         thereminReverb.generate();
-        oscillator.chain(thereminCompress, channel, thereminReverb, Tone.Master);
+        oscillator.chain(thereminCompress, channel, thereminDelay, thereminReverb, Tone.Master);
         
         if (oscillator.state == 'stopped') {
             oscillator.start();
@@ -66,6 +70,7 @@ const Theremin = props => {
             <button className="theremin-waveform-button" name="tri" id="theremin-triangle-button" onClick={() => setWaveform('triangle')}>TRI</button><br />
             <button className="theremin-waveform-button" name="saw" id="theremin-sawtooth-button" onClick={() => setWaveform('sawtooth')}>SAW</button><br />
             <button className="theremin-waveform-button" name="squ" id="theremin-square-button" onClick={() => setWaveform('square')}>SQU</button>
+            <input type="range" id="theremin-delay-time-range" name="theremin-delay-time-range" min="0" max="5"/>
             <div className="theremin-surface" onPointerMove={setVF} onMouseOut={mute} onLoad={initTheremin} onClick={initTheremin}>
                 <p>{waveform}</p>
                 <p>{volFreq.volume}</p>

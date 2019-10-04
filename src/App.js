@@ -12,10 +12,6 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <h2>Bebop and Rock Steady present...</h2>
-        <h1>Krang, a react band in a page</h1>
-      </header>
       <main>
         <Controls />
         <Rhythm toneContext={toneContext} />

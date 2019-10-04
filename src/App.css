@@ -53,7 +53,7 @@ body {
 
 .theremin-waveform-button {
   position: absolute;
-  width: 20vw;
+  width: 10vw;
   height: 7vh;
   font-family: "Roboto Mono", monospace;
   font-weight: 700;
@@ -96,6 +96,11 @@ body {
 #theremin-square-button {
   left: 0px;
   top: 21vh;
+}
+
+#theremin-delay-time-range {
+  left: 10vw;
+  top: 4vh;
 }
 
 .rhythm-container {
