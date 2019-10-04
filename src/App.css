@@ -137,3 +137,8 @@ body {
   border-radius: 4px;
   box-shadow: #282c34 20px 15px;
 }
+
+img {
+  height: calc(35vh - 50px);
+  width: auto;
+}
