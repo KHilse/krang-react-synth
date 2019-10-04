@@ -22,7 +22,13 @@ const PlayerProvider = ({ children }) => {
       }
     )
     channel.volume.value = -5;
-    player.chain(channel, Tone.Master);
+    let rhythmCompress = new Tone.Compressor({
+      'threshold': -20,
+      'ratio': 6,
+      'attack': 0.3,
+      'release': 0.1
+    });
+    player.chain(channel, rhythmCompress, Tone.Master);
   }, []);
   return children({ player });
 };

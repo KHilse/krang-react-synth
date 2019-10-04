@@ -12,7 +12,10 @@ const Theremin = props => {
     });
     const [oscillator] = useState(new Tone.Oscillator(440,'sine'));
     const [oscStarted, setOscStarted] = useState(false);
-    const [channel] = useState(new Tone.Channel());
+    const [channel] = useState(new Tone.Channel({
+        'volume': -5,
+        'pan': 0
+    }));
 
     function setVF(e) {
         let bRect = e.target.getBoundingClientRect();
@@ -39,7 +42,13 @@ const Theremin = props => {
 
     function initTheremin(e) {
         e.stopPropagation();
-        oscillator.chain(channel, Tone.Master);
+        let thereminCompress = new Tone.Compressor({
+            'threshold': -20,
+            'ratio': 6,
+            'attack': 0.3,
+            'release': 0.1
+          });
+        oscillator.chain(thereminCompress, channel, Tone.Master);
         
         if (oscillator.state == 'stopped') {
             oscillator.start();
