@@ -25,7 +25,6 @@ const Theremin = props => {
             'volume': Math.floor(bRect.bottom - e.pageY),
             'frequency': Math.floor(freq)
         });
-        console.log(oscillator)
         oscillator.mute = false;
         oscillator.volume.value = -5 - ((200 - volFreq.volume) / 3);
         oscillator.frequency.value = freq;
@@ -48,7 +47,12 @@ const Theremin = props => {
             'attack': 0.3,
             'release': 0.1
           });
-        oscillator.chain(thereminCompress, channel, Tone.Master);
+        let thereminReverb = new Tone.Reverb({
+            'decay': 2,
+            'preDelay': 0.01
+        });
+        thereminReverb.generate();
+        oscillator.chain(thereminCompress, channel, thereminReverb, Tone.Master);
         
         if (oscillator.state == 'stopped') {
             oscillator.start();
