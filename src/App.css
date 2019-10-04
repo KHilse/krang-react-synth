@@ -1,3 +1,21 @@
+h1, h2, h3 {
+  font-family: 'Press Start 2P', cursive;
+  margin: .2em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1em;
+  margin: .2em;
+}
+
 .App {
   text-align: center;
 }
@@ -30,7 +48,7 @@ body {
 .controls-container {
   position: absolute;
   width: 20vw;
-  height: 90vh;
+  height: 92vh;
   left: 0px;
   top: 0px;
   background-color: #0FB051;
@@ -44,7 +62,7 @@ body {
 .theremin-container {
   position: absolute;
   width: 70vw;
-  height: 30vh;
+  height: 28vh;
   left: 22vw;
   top: 0vh;
   background-color: #0FB051;
@@ -69,12 +87,13 @@ body {
 
 .theremin-surface {
   position: absolute;
-  width: 47vw;
+  width: 52vw;
   height: 28vh;
   top: 0vh;
-  left: 21vw;
-  background-image: linear-gradient(to right, black, red);
-  border: 3px solid yellow;
+  left: 18vw;
+  background-image: linear-gradient(to top, #03206A, #075AC3);
+  border: 3px solid #DCA304;
+  box-sizing: border-box;
   z-index: 100;
 }
 
@@ -83,7 +102,7 @@ body {
   font-family: "Roboto Mono", monospace;
   text-align: right;
   font-size: 1em;
-  margin: .1em, 1em, 0em, 0em;
+  margin: 10px 20px 0 0;
   pointer-events: none;
 }
 
@@ -111,29 +130,30 @@ body {
   left: 10vw;
   top: 4vh;
   width: 4vw;
-  height: 24vh;
+  height: 20vh;
 }
 
 #theremin-delay-regen-range {
   position: absolute;
   writing-mode: bt-lr; /* IE */
   -webkit-appearance: slider-vertical; /* WebKit */
-  left: 16vw;
+  left: 13vw;
   top: 4vh;
   width: 4vw;
-  height: 24vh;
+  height: 20vh;
 }
 
 .rhythm-container {
+  box-sizing: border-box;
   position: absolute;
   width: 70vw;
-  height: calc(80vh - 60px);
+  height: calc(70vh - 60px);
   left: 22vw;
-  top: 33vh;
+  top: 30vh;
   background-color: #DCA304;
   border: 3px solid black;
   margin-top: 30px;
   margin-left: 15px;
   border-radius: 4px;
-  box-shadow: #282c34 20px 15px;
+  box-shadow: #282c34 10px 15px;
 }
