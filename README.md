@@ -1,68 +1,21 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Krang React Synth
 
-## Available Scripts
+Krang is an app that allows anyone to make music. It is inspired by both retro gaming aethetics and the original experiments with synthesizers. We have attempted to create a band-in-a-page, and (humbly) we think that we were successful.
 
-In the project directory, you can run:
+Krang was intended to be a simple app, able to be rolled out in a hurry. Krang was submitted as a project entry for General Assembly's Software Engineering Intensive Cohort 26 hackathon. It won first place. 
 
-### `npm start`
+The fun in Krang lies in its simplicity. It contains two distinct sections: the sequencer and the theremin. The top four lines of the sequencer are a drum machine. The bottom four lines of the sequencer are piano keys. You can arrange any of these sounds in whatever sequence you would like, up to 4 musical bars. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The second section is the theremin. A analog theremin works by detecting objects near it and change its pitch and volume based on where those objects are in relation to its antennae. Our theremin works in a very similar way! When you place and move your cursor in the box, you can modulate the sounds that the theremin makes!
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# Future Work
+- User changes to BPM
+- User can select the sounds in the sequencer
 
-### `npm test`
+# Technology Use:
+- React
+- Tone.js
+- CSS3
+- HTML5
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#
